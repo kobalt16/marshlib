@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Библиотека МарШ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка с логотипом -->
+        <header>
+            <div class="logo-section">
+                <img src="logomarsh.jpg" alt="Логотип кружка МарШ" class="logo">
+                <div class="title">
+                    <h1>Библиотека марксистского кружка МарШ</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Панель поиска и фильтров -->
+        <div class="controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search" placeholder="Поиск по названию или автору...">
+            </div>
+            
+            <div class="filters">
+                <select id="categoryFilter">
+                    <option value="all">Все разделы</option>
+                    <option value="political-economy">Политическая экономия</option>
+                    <option value="philosophy">Философия</option>
+                    <option value="scientific-socialism">Научный социализм</option>
+                    <option value="history">История</option>
+                    <option value="collected-works">Собрания сочинений</option>
+                </select>
+                
+                <select id="authorFilter">
+                    <option value="all">Все авторы</option>
+                    <option value="Маркс">Карл Маркс</option>
+                    <option value="Энгельс">Фридрих Энгельс</option>
+                    <option value="Ленин">Владимир Ленин</option>
+                    <option value="Плеханов">Георгий Плеханов</option>
+                    <option value="Люксембург">Роза Люксембург</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Информация о количестве книг -->
+        <div class="books-info">
+            <span id="booksCount">0</span> книг в библиотеке
+        </div>
+
+        <!-- Сетка книг -->
+        <div class="books-grid" id="booksGrid">
+            <!-- Книги будут загружены через JavaScript -->
+        </div>
+
+        <!-- Футер -->
+        <footer>
+            <p>Кружок МарШ • Библиотека марксистской литературы</p>
+            <p class="notice">Книги размещены на Google Drive для скачивания</p>
+        </footer>
+    </div>
+
+    <!-- Модальное окно для информации о книге -->
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Информация о книге будет загружена через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
