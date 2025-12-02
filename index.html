@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Библиотека МарШ</title>
+    <title>Библиотека кружка МарШ</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,9 +12,10 @@
         <!-- Шапка с логотипом -->
         <header>
             <div class="logo-section">
-                <img src="logomarsh.jpg" alt="Логотип кружка МарШ" class="logo">
+                <img src="logo.jpg" alt="Логотип кружка МарШ" class="logo">
                 <div class="title">
                     <h1>Библиотека марксистского кружка МарШ</h1>
+                    <p>Классическая марксистская литература</p>
                 </div>
             </div>
         </header>
@@ -26,30 +27,43 @@
                 <input type="text" id="search" placeholder="Поиск по названию или автору...">
             </div>
             
-            <div class="filters">
-                <select id="categoryFilter">
-                    <option value="all">Все разделы</option>
-                    <option value="political-economy">Политическая экономия</option>
-                    <option value="philosophy">Философия</option>
-                    <option value="scientific-socialism">Научный социализм</option>
-                    <option value="history">История</option>
-                    <option value="collected-works">Собрания сочинений</option>
-                </select>
+            <div class="filter-group">
+                <div class="filter">
+                    <label for="authorFilter"><i class="fas fa-user"></i> Автор:</label>
+                    <select id="authorFilter">
+                        <option value="all">Все авторы</option>
+                        <!-- Авторы будут добавлены через JS -->
+                    </select>
+                </div>
                 
-                <select id="authorFilter">
-                    <option value="all">Все авторы</option>
-                    <option value="Маркс">Карл Маркс</option>
-                    <option value="Энгельс">Фридрих Энгельс</option>
-                    <option value="Ленин">Владимир Ленин</option>
-                    <option value="Плеханов">Георгий Плеханов</option>
-                    <option value="Люксембург">Роза Люксембург</option>
-                </select>
+                <div class="filter">
+                    <label for="sortBy"><i class="fas fa-sort"></i> Сортировка:</label>
+                    <select id="sortBy">
+                        <option value="title-asc">Название А-Я</option>
+                        <option value="title-desc">Название Я-А</option>
+                        <option value="year-asc">Год ↑ (старые)</option>
+                        <option value="year-desc">Год ↓ (новые)</option>
+                        <option value="author-asc">Автор А-Я</option>
+                    </select>
+                </div>
             </div>
         </div>
 
-        <!-- Информация о количестве книг -->
-        <div class="books-info">
-            <span id="booksCount">0</span> книг в библиотеке
+        <!-- Статистика книг -->
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Всего книг:</span>
+                <span class="stat-value" id="totalBooks">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Найдено:</span>
+                <span class="stat-value" id="foundBooks">0</span>
+            </div>
+            <div class="stat-item">
+                <button id="resetFilters" class="btn-reset">
+                    <i class="fas fa-redo"></i> Сбросить фильтры
+                </button>
+            </div>
         </div>
 
         <!-- Сетка книг -->
@@ -59,18 +73,16 @@
 
         <!-- Футер -->
         <footer>
-            <p>Кружок МарШ • Библиотека марксистской литературы</p>
-            <p class="notice">Книги размещены на Google Drive для скачивания</p>
+            <p>Кружок МарШ • Библиотека классической марксистской литературы</p>
+            <p class="notice">Все книги доступны для прямого скачивания</p>
         </footer>
     </div>
 
-    <!-- Модальное окно для информации о книге -->
-    <div class="modal" id="bookModal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-body" id="modalBody">
-                <!-- Информация о книге будет загружена через JavaScript -->
-            </div>
+    <!-- Уведомление о скачивании -->
+    <div id="downloadNotification" class="download-notification">
+        <div class="notification-content">
+            <i class="fas fa-download"></i>
+            <span id="notificationText">Скачивание...</span>
         </div>
     </div>
 

@@ -2,277 +2,342 @@
 const books = [
     {
         id: 1,
-        title: "Капитал",
-        author: "Карл Маркс",
-        category: "political-economy",
-        year: "1867",
-        description: "Фундаментальный труд по политической экономии, содержащий критический анализ капитализма.",
-        downloadUrl: "https://drive.google.com/file/d/1A2B3C4D5E6F7G8H9I0J/view?usp=sharing",
-        pages: "832"
+        title: "Алкоголь и человек",
+        author: "Попов Л.Е.",
+        category: "other",
+        year: 2012,
+        description: "Об алкоголе",
+        format: "DOC",
+        downloadUrl: "https://docs.google.com/document/d/10SvFZQg-s7mwzUtLGp8tHg57-LKMJ2sd/edit?usp=sharing&ouid=113850773003115433714&rtpof=true&sd=true"
     },
     {
         id: 2,
-        title: "Манифест Коммунистической партии",
-        author: "Карл Маркс, Фридрих Энгельс",
+        title: "В защиту философии",
+        author: "Корнфорт Морис",
         category: "scientific-socialism",
-        year: "1848",
-        description: "Программный документ коммунистического движения, излагающий основные идеи марксизма.",
-        downloadUrl: "https://drive.google.com/file/d/1K2L3M4N5O6P7Q8R9S0T/view?usp=sharing",
-        pages: "48"
+        year: 1951,
+        description: "Программный документ коммунистического движения",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1_vMrkzBlyiG4bskisygNKvXyiseGpJju/view?usp=sharing"
     },
     {
         id: 3,
-        title: "Государство и революция",
-        author: "Владимир Ленин",
+        title: "Программа по курсу 'Диалектический и исторический материализм'",
+        author: " ",
         category: "scientific-socialism",
-        year: "1917",
-        description: "Произведение, посвященное марксистскому учению о государстве и задачах пролетариата в революции.",
-        downloadUrl: "https://drive.google.com/file/d/1U2V3W4X5Y6Z7A8B9C0D/view?usp=sharing",
-        pages: "144"
+        year: 1950,
+        description: "Марксистское учение о государстве",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1nu4K0hp3AiN-OipXemmn9PPQLo3tXCCj/view?usp=sharing"
     },
     {
         id: 4,
-        title: "Анти-Дюринг",
-        author: "Фридрих Энгельс",
+        title: "Учебный план политшкол и кружков по изучению истории ВКП(б)",
+        author: " ",
         category: "philosophy",
-        year: "1878",
-        description: "Полемическое произведение, излагающее основные положения марксизма в философии, политической экономии и социализме.",
-        downloadUrl: "https://drive.google.com/file/d/1E2F3G4H5I6J7K8L9M0N/view?usp=sharing",
-        pages: "512"
+        year: 1951,
+        description: "Основные положения марксизма в философии",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/17O3ThIiEPF8o40x3O5HheQZin1BTBZ2U/view?usp=sharing"
     },
     {
         id: 5,
-        title: "Развитие капитализма в России",
-        author: "Владимир Ленин",
+        title: "Сводный список книг, подлежащих исключению из библиотек и книготорговых сетей Часть II",
+        author: " ",
         category: "political-economy",
-        year: "1899",
-        description: "Экономическое исследование процессов развития капитализма в российской экономике конца XIX века.",
-        downloadUrl: "https://drive.google.com/file/d/1O2P3Q4R5S6T7U8V9W0X/view?usp=sharing",
-        pages: "672"
+        year: 1961,
+        description: "Экономическое исследование России конца XIX века",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1gresZu17U2WXUCzmzbZKsG3kpKV7Q99p/view?usp=sharing"
     },
     {
         id: 6,
-        title: "Диалектика природы",
-        author: "Фридрих Энгельс",
+        title: "История медицины Том I",
+        author: "Петров Б.Д.",
         category: "philosophy",
-        year: "1883",
-        description: "Собрание заметок по диалектическому материализму и философским вопросам естествознания.",
-        downloadUrl: "https://drive.google.com/file/d/1Y2Z3A4B5C6D7E8F9G0H/view?usp=sharing",
-        pages: "384"
+        year: 1954,
+        description: "Диалектический материализм и естествознание",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/19HZ53MUxjujvDHvlFoOBBfXgLTjFJzHK/view?usp=sharing"
     },
     {
         id: 7,
-        title: "Что делать?",
-        author: "Владимир Ленин",
+        title: "О положении в биологической науке. Стенографический отчет сессии ВАСХНИЛ",
+        author: " ",
         category: "scientific-socialism",
-        year: "1902",
-        description: "Работа о вопросах строительства революционной партии нового типа.",
-        downloadUrl: "https://drive.google.com/file/d/1I2J3K4L5M6N7O8P9Q0R/view?usp=sharing",
-        pages: "192"
+        year: 1948,
+        description: "Вопросы строительства революционной партии",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1WuKNfEi6mvgwol04bR8EvxH9yf1xJJnx/view?usp=sharing"
     },
     {
         id: 8,
-        title: "К вопросу о развитии монистического взгляда на историю",
-        author: "Георгий Плеханов",
+        title: "Слово как физиологический и лечебный фактор",
+        author: "Платонов К.И.",
         category: "philosophy",
-        year: "1895",
-        description: "Одна из основных работ Плеханова, посвященная историческому материализму.",
-        downloadUrl: "https://drive.google.com/file/d/1S2T3U4V5W6X7Y8Z9A0B/view?usp=sharing",
-        pages: "256"
+        year: 1957,
+        description: "Исторический материализм",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1TZ-DyUgjB9G5vS6TAL6Nu-ZpP_5eNpvp/view?usp=sharing"
     },
     {
         id: 9,
-        title: "Накопление капитала",
-        author: "Роза Люксембург",
+        title: "Научная сессия посвященная проблемам физиологического учения академика И.П. Павлова",
+        author: " ",
         category: "political-economy",
-        year: "1913",
-        description: "Экономический труд, исследующий империализм как высшую стадию капитализма.",
-        downloadUrl: "https://drive.google.com/file/d/1C2D3E4F5G6H7I8J9K0L/view?usp=sharing",
-        pages: "480"
+        year: 1950,
+        description: "Исследование империализма",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1ZivqQo7pf_gbCuRqJmAG-G46cqcHGB6F/view?usp=sharing"
     },
     {
         id: 10,
-        title: "Классовая борьба во Франции с 1848 по 1850 г.",
-        author: "Карл Маркс",
+        title: "Листовки петроградских большевиков 1917-1920",
+        author: " ",
         category: "history",
-        year: "1850",
-        description: "Анализ революционных событий во Франции с точки зрения исторического материализма.",
-        downloadUrl: "https://drive.google.com/file/d/1M2N3O4P5Q6R7S8T9U0V/view?usp=sharing",
-        pages: "160"
+        year: 1957,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1A1jrHiKbQ90MdKAp4s3KZzaVDAfBaZaT/view?usp=sharing"
     },
     {
         id: 11,
-        title: "Собрание сочинений (том 1-50)",
-        author: "Карл Маркс, Фридрих Энгельс",
-        category: "collected-works",
-        year: "1975-2005",
-        description: "Полное собрание сочинений основоположников марксизма.",
-        downloadUrl: "https://drive.google.com/drive/folders/1W2X3Y4Z5A6B7C8D9E0F",
-        pages: "35000"
+        title: "Кора головного мозга и внутренние органы",
+        author: "Быков К.М.",
+        category: "history",
+        year: 1947,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1CblxS7Y3sBtFL3JbgG63V9VXm5YNgHWe/view?usp=sharing"
     },
     {
         id: 12,
-        title: "Полное собрание сочинений (том 1-55)",
-        author: "Владимир Ленин",
-        category: "collected-works",
-        year: "1967-1975",
-        description: "Наиболее полное собрание сочинений В.И. Ленина.",
-        downloadUrl: "https://drive.google.com/drive/folders/1V2W3X4Y5Z6A7B8C9D0E",
-        pages: "42000"
+        title: "Краткий философский словарь",
+        author: "Розенталь М",
+        category: "history",
+        year: 1951,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1D5FrGPQ_U9U1RVMl34t47y4K0LP0VNZY/view?usp=sharing"
+    },
+    {
+        id: 13,
+        title: "Политическая экономия",
+        author: "Островитянов К.В.",
+        category: "history",
+        year: 1954,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1YGoXUcozOjo475MEMyLkIpMNCfhgru7Q/view?usp=sharing"
     }
 ];
 
 // DOM элементы
 const booksGrid = document.getElementById('booksGrid');
 const searchInput = document.getElementById('search');
-const categoryFilter = document.getElementById('categoryFilter');
 const authorFilter = document.getElementById('authorFilter');
-const booksCount = document.getElementById('booksCount');
-const bookModal = document.getElementById('bookModal');
-const modalBody = document.getElementById('modalBody');
-const closeModal = document.querySelector('.close');
+const sortBy = document.getElementById('sortBy');
+const totalBooks = document.getElementById('totalBooks');
+const foundBooks = document.getElementById('foundBooks');
+const resetFiltersBtn = document.getElementById('resetFilters');
+const downloadNotification = document.getElementById('downloadNotification');
+const notificationText = document.getElementById('notificationText');
 
-// Отображение всех книг
+// Инициализация
+document.addEventListener('DOMContentLoaded', () => {
+    // Показываем общее количество книг
+    totalBooks.textContent = books.length;
+    
+    // Заполняем фильтр авторов
+    populateAuthorFilter();
+    
+    // Отображаем все книги
+    displayBooks(books);
+    
+    // Добавляем обработчики событий
+    searchInput.addEventListener('input', filterAndSortBooks);
+    authorFilter.addEventListener('change', filterAndSortBooks);
+    sortBy.addEventListener('change', filterAndSortBooks);
+    resetFiltersBtn.addEventListener('click', resetFilters);
+});
+
+// Заполнение фильтра авторами
+function populateAuthorFilter() {
+    // Получаем уникальных авторов
+    const authors = [...new Set(books.map(book => book.author))];
+    
+    // Сортируем по алфавиту
+    authors.sort((a, b) => a.localeCompare(b, 'ru'));
+    
+    // Добавляем в фильтр
+    authors.forEach(author => {
+        const option = document.createElement('option');
+        option.value = author;
+        option.textContent = author;
+        authorFilter.appendChild(option);
+    });
+}
+
+// Функция скачивания книги
+function downloadBook(book) {
+    // Показываем уведомление
+    notificationText.textContent = `Скачивание: ${book.title}`;
+    downloadNotification.classList.add('show');
+    
+    // Создаем скрытую ссылку для скачивания
+    const link = document.createElement('a');
+    link.href = book.downloadUrl;
+    link.download = `${book.title}.${book.format.toLowerCase()}`;
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    
+    // Кликаем по ссылке
+    link.click();
+    
+    // Удаляем ссылку
+    setTimeout(() => {
+        document.body.removeChild(link);
+    }, 100);
+    
+    // Скрываем уведомление через 3 секунды
+    setTimeout(() => {
+        downloadNotification.classList.remove('show');
+    }, 3000);
+}
+
+// Фильтрация и сортировка книг
+function filterAndSortBooks() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const selectedAuthor = authorFilter.value;
+    const sortOption = sortBy.value;
+    
+    // Фильтрация
+    let filteredBooks = books.filter(book => {
+        const matchesSearch = searchTerm === '' || 
+                            book.title.toLowerCase().includes(searchTerm) || 
+                            book.author.toLowerCase().includes(searchTerm);
+        
+        const matchesAuthor = selectedAuthor === 'all' || book.author === selectedAuthor;
+        
+        return matchesSearch && matchesAuthor;
+    });
+    
+    // Сортировка
+    filteredBooks = sortBooks(filteredBooks, sortOption);
+    
+    // Отображение
+    displayBooks(filteredBooks);
+    
+    // Обновляем статистику
+    foundBooks.textContent = filteredBooks.length;
+}
+
+// Сортировка книг
+function sortBooks(booksArray, sortOption) {
+    const sortedBooks = [...booksArray];
+    
+    switch(sortOption) {
+        case 'title-asc':
+            return sortedBooks.sort((a, b) => a.title.localeCompare(b.title, 'ru'));
+        
+        case 'title-desc':
+            return sortedBooks.sort((a, b) => b.title.localeCompare(a.title, 'ru'));
+        
+        case 'year-asc':
+            return sortedBooks.sort((a, b) => a.year - b.year);
+        
+        case 'year-desc':
+            return sortedBooks.sort((a, b) => b.year - a.year);
+        
+        case 'author-asc':
+            return sortedBooks.sort((a, b) => a.author.localeCompare(b.author, 'ru'));
+        
+        default:
+            return sortedBooks;
+    }
+}
+
+// Отображение книг
 function displayBooks(booksToDisplay) {
     booksGrid.innerHTML = '';
     
+    if (booksToDisplay.length === 0) {
+        booksGrid.innerHTML = `
+            <div class="no-results">
+                <i class="fas fa-search"></i>
+                <p>Книги не найдены</p>
+                <button onclick="resetFilters()" class="btn-reset">Сбросить фильтры</button>
+            </div>
+        `;
+        return;
+    }
+    
     booksToDisplay.forEach(book => {
-        const categoryNames = {
-            'political-economy': 'Политическая экономия',
-            'philosophy': 'Философия',
-            'scientific-socialism': 'Научный социализм',
-            'history': 'История',
-            'collected-works': 'Собрания сочинений'
-        };
-        
         const bookCard = document.createElement('div');
         bookCard.className = 'book-card';
         
-        // Иконка в зависимости от категории
-        let iconClass = 'fa-book';
-        if (book.category === 'collected-works') iconClass = 'fa-books';
-        if (book.category === 'philosophy') iconClass = 'fa-brain';
-        if (book.category === 'history') iconClass = 'fa-landmark';
-        
         bookCard.innerHTML = `
-            <div class="book-cover">
-                <i class="fas ${iconClass}"></i>
-            </div>
-            <div class="book-info">
+            <div class="book-header">
                 <h3 class="book-title">${book.title}</h3>
-                <p class="book-author">${book.author}</p>
-                <span class="book-category">${categoryNames[book.category] || book.category}</span>
-                <p class="book-description">${book.description.substring(0, 100)}...</p>
-                <div class="book-actions">
-                    <button class="btn btn-download" onclick="window.open('${book.downloadUrl}', '_blank')">
-                        <i class="fas fa-download"></i> Скачать
-                    </button>
-                    <button class="btn btn-info" onclick="openBookModal(${book.id})">
-                        <i class="fas fa-info-circle"></i> Подробнее
-                    </button>
+                <div class="book-author">
+                    <i class="fas fa-user"></i>
+                    <span>${book.author}</span>
                 </div>
+            </div>
+            
+            <div class="book-meta">
+                <div class="book-year">
+                    <i class="fas fa-calendar"></i>
+                    <span>${book.year}</span>
+                </div>
+                <span class="book-format">${book.format}</span>
+            </div>
+            
+            <div class="book-download">
+                <button class="btn-download" onclick="downloadBook(${JSON.stringify(book).replace(/"/g, '&quot;')})">
+                    <i class="fas fa-download"></i> Скачать
+                </button>
             </div>
         `;
         
         booksGrid.appendChild(bookCard);
     });
-    
-    booksCount.textContent = booksToDisplay.length;
 }
 
-// Фильтрация книг
-function filterBooks() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const selectedCategory = categoryFilter.value;
-    const selectedAuthor = authorFilter.value;
-    
-    const filteredBooks = books.filter(book => {
-        const matchesSearch = book.title.toLowerCase().includes(searchTerm) || 
-                              book.author.toLowerCase().includes(searchTerm) ||
-                              book.description.toLowerCase().includes(searchTerm);
-        
-        const matchesCategory = selectedCategory === 'all' || book.category === selectedCategory;
-        
-        const matchesAuthor = selectedAuthor === 'all' || book.author.includes(selectedAuthor);
-        
-        return matchesSearch && matchesCategory && matchesAuthor;
-    });
-    
-    displayBooks(filteredBooks);
+// Сброс фильтров
+function resetFilters() {
+    searchInput.value = '';
+    authorFilter.value = 'all';
+    sortBy.value = 'title-asc';
+    filterAndSortBooks();
 }
 
-// Открытие модального окна с информацией о книге
-function openBookModal(bookId) {
-    const book = books.find(b => b.id === bookId);
-    
-    if (!book) return;
-    
-    const categoryNames = {
-        'political-economy': 'Политическая экономия',
-        'philosophy': 'Философия',
-        'scientific-socialism': 'Научный социализм',
-        'history': 'История',
-        'collected-works': 'Собрания сочинений'
-    };
-    
-    modalBody.innerHTML = `
-        <div class="modal-book-info">
-            <h2>${book.title}</h2>
-            <p class="author">${book.author}</p>
-            <div class="details">
-                <div class="detail-item"><strong>Год:</strong> ${book.year}</div>
-                <div class="detail-item"><strong>Раздел:</strong> ${categoryNames[book.category] || book.category}</div>
-                <div class="detail-item"><strong>Страниц:</strong> ${book.pages}</div>
-            </div>
-            <p class="description">${book.description}</p>
-            <a href="${book.downloadUrl}" target="_blank" class="modal-download-btn">
-                <i class="fas fa-download"></i> Скачать книгу с Google Drive
-            </a>
-        </div>
-    `;
-    
-    bookModal.style.display = 'block';
-}
-
-// Закрытие модального окна
-closeModal.onclick = function() {
-    bookModal.style.display = 'none';
-}
-
-window.onclick = function(event) {
-    if (event.target === bookModal) {
-        bookModal.style.display = 'none';
+// Добавляем стили для "нет результатов"
+const noResultsStyle = document.createElement('style');
+noResultsStyle.textContent = `
+    .no-results {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 50px 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     }
-}
-
-// Инициализация
-document.addEventListener('DOMContentLoaded', () => {
-    // Заполняем фильтр авторов уникальными значениями
-    const authors = [...new Set(books.map(book => {
-        // Разделяем соавторов и берем первого для фильтра
-        return book.author.split(',')[0].trim();
-    }))];
     
-    // Оставляем только уникальных авторов
-    const uniqueAuthors = [...new Set(authors)];
+    .no-results i {
+        font-size: 3rem;
+        color: #ddd;
+        margin-bottom: 20px;
+    }
     
-    // Добавляем авторов в фильтр (кроме уже существующих)
-    uniqueAuthors.forEach(author => {
-        // Проверяем, есть ли уже такой автор в фильтре
-        const existingOption = Array.from(authorFilter.options).find(opt => opt.value === author);
-        if (!existingOption && author !== 'all') {
-            const option = document.createElement('option');
-            option.value = author;
-            option.textContent = author;
-            authorFilter.appendChild(option);
-        }
-    });
+    .no-results p {
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
     
-    // Показываем все книги при загрузке
-    displayBooks(books);
-    
-    // Добавляем обработчики событий
-    searchInput.addEventListener('input', filterBooks);
-    categoryFilter.addEventListener('change', filterBooks);
-    authorFilter.addEventListener('change', filterBooks);
-});
+    .no-results .btn-reset {
+        margin: 0 auto;
+    }
+`;
+document.head.appendChild(noResultsStyle);
