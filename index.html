@@ -15,75 +15,137 @@
                 <img src="logo.jpg" alt="Логотип кружка МарШ" class="logo">
                 <div class="title">
                     <h1>Библиотека марксистского кружка МарШ</h1>
-                    <p>Классическая марксистская литература</p>
+                    <p>Классическая марксистская литература и учебные материалы</p>
                 </div>
             </div>
         </header>
 
-        <!-- Панель поиска и фильтров -->
-        <div class="controls">
-            <div class="search-box">
-                <i class="fas fa-search"></i>
-                <input type="text" id="search" placeholder="Поиск по названию или автору...">
-            </div>
-            
-            <div class="filter-group">
-                <div class="filter">
-                    <label for="authorFilter"><i class="fas fa-user"></i> Автор:</label>
-                    <select id="authorFilter">
-                        <option value="all">Все авторы</option>
-                        <!-- Авторы будут добавлены через JS -->
-                    </select>
+        <!-- Навигация по вкладкам -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="library">
+                <i class="fas fa-book"></i> Библиотека
+            </button>
+            <button class="tab-btn" data-tab="program">
+                <i class="fas fa-graduation-cap"></i> Учебная программа
+            </button>
+        </div>
+
+        <!-- Вкладка Библиотека -->
+        <div id="library" class="tab-content active">
+            <!-- Панель поиска и фильтров -->
+            <div class="controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search" placeholder="Поиск по названию или автору...">
                 </div>
                 
-                <div class="filter">
-                    <label for="sortBy"><i class="fas fa-sort"></i> Сортировка:</label>
-                    <select id="sortBy">
-                        <option value="title-asc">Название А-Я</option>
-                        <option value="title-desc">Название Я-А</option>
-                        <option value="year-asc">Год ↑ (старые)</option>
-                        <option value="year-desc">Год ↓ (новые)</option>
-                        <option value="author-asc">Автор А-Я</option>
-                    </select>
+                <div class="filter-group">
+                    <div class="filter">
+                        <label for="titleFilter"><i class="fas fa-book"></i> Название:</label>
+                        <select id="titleFilter">
+                            <option value="all">Все названия</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter">
+                        <label for="authorFilter"><i class="fas fa-user"></i> Автор:</label>
+                        <select id="authorFilter">
+                            <option value="all">Все авторы</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter">
+                        <label for="sortBy"><i class="fas fa-sort"></i> Сортировка:</label>
+                        <select id="sortBy">
+                            <option value="title-asc">Название А-Я</option>
+                            <option value="title-desc">Название Я-А</option>
+                            <option value="year-asc">Год ↑ (старые)</option>
+                            <option value="year-desc">Год ↓ (новые)</option>
+                            <option value="author-asc">Автор А-Я</option>
+                        </select>
+                    </div>
                 </div>
             </div>
+
+            <!-- Статистика книг -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Всего книг:</span>
+                    <span class="stat-value" id="totalBooks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Найдено:</span>
+                    <span class="stat-value" id="foundBooks">0</span>
+                </div>
+                <div class="stat-item">
+                    <button id="resetFilters" class="btn-reset">
+                        <i class="fas fa-redo"></i> Сбросить фильтры
+                    </button>
+                </div>
+            </div>
+
+            <!-- Сетка книг -->
+            <div class="books-grid" id="booksGrid">
+                <!-- Книги будут загружены через JavaScript -->
+            </div>
         </div>
 
-        <!-- Статистика книг -->
-        <div class="stats">
-            <div class="stat-item">
-                <span class="stat-label">Всего книг:</span>
-                <span class="stat-value" id="totalBooks">0</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label">Найдено:</span>
-                <span class="stat-value" id="foundBooks">0</span>
-            </div>
-            <div class="stat-item">
-                <button id="resetFilters" class="btn-reset">
-                    <i class="fas fa-redo"></i> Сбросить фильтры
-                </button>
-            </div>
-        </div>
+        <!-- Вкладка Учебная программа -->
+        <div id="program" class="tab-content">
+            <div class="program-container">
+                <div class="program-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Учебная программа кружка МарШ</h2>
+                    <p class="program-subtitle">Систематическое изучение марксистской теории</p>
+                </div>
 
-        <!-- Сетка книг -->
-        <div class="books-grid" id="booksGrid">
-            <!-- Книги будут загружены через JavaScript -->
+                <div class="program-content">
+                    <!-- Основная программа -->
+                    <div class="program-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-book-reader"></i> Основная (плановая) программа изучения
+                        </h3>
+                        <p class="section-subtitle">В порядке перечисления, метод коллективного чтения с обсуждением</p>
+                        
+                        <div class="program-list" id="mainProgram">
+                            <!-- Программа будет добавлена через JS -->
+                        </div>
+                    </div>
+
+                    <!-- Самостоятельное чтение -->
+                    <div class="program-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-user-graduate"></i> Для самостоятельного чтения
+                        </h3>
+                        <p class="section-subtitle">Желательно в процессе обучения или во 2-м году обучения</p>
+                        
+                        <div class="program-list" id="selfStudyProgram">
+                            <!-- Программа будет добавлена через JS -->
+                        </div>
+                    </div>
+
+                    <!-- Итоги программы -->
+                    <div class="program-summary">
+                        <div class="summary-item">
+                            <i class="fas fa-clock"></i>
+                            <span><strong>Итого:</strong> 150-160 часов</span>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-users"></i>
+                            <span><strong>Метод:</strong> Коллективное чтение (выборочно) с обсуждением</span>
+                        </div>
+                        <div class="summary-note">
+                            <p>ДАЛЕЕ вы уже сами будете знать что читать, кого читать, что делать и как делать. И сами будете решать.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Футер -->
         <footer>
             <p>Кружок МарШ • Библиотека классической марксистской литературы</p>
-            <p class="notice">Все книги доступны для прямого скачивания</p>
+            <p class="notice">Все книги доступны через Google Drive</p>
         </footer>
-    </div>
-
-    <!-- Уведомление о скачивании -->
-    <div id="downloadNotification" class="download-notification">
-        <div class="notification-content">
-            <i class="fas fa-download"></i>
-            <span id="notificationText">Скачивание...</span>
-        </div>
     </div>
 
     <script src="script.js"></script>

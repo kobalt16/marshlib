@@ -530,43 +530,267 @@ const books = [
         format: "PDF",
         downloadUrl: "https://drive.google.com/file/d/13IP4-YsNs0UlMwKdVHUjgZohVWtdO8bO/view?usp=sharing"
     }
-
-
 ];
+
+// Учебная программа
+const studyProgram = {
+    main: [
+        {
+            number: 1,
+            title: "Манифест Коммунистической партии",
+            authors: "Маркс",
+            hours: 4,
+            bookId: 41,
+            format: "PDF"
+        },
+        {
+            number: 2,
+            title: "Три источника и три составных части марксизма + Марксизм и ревизионизм",
+            authors: "Ленин",
+            hours: 2,
+            bookIds: [38, 37],
+            format: "PDF"
+        },
+        {
+            number: 3,
+            title: "Учебник политической экономии 54 г + отдельные моменты учебника политэкономии 58 г и популярного учебника политэкономии Никитина 59 г",
+            authors: "Островитянов К.В., Никитин П.",
+            hours: "60-70",
+            bookIds: [13, 28],
+            format: "PDF"
+        },
+        {
+            number: 4,
+            title: "Краткий курс истории ВКП(б)",
+            authors: "Комиссия ЦК ВКП(б)",
+            hours: 30,
+            bookId: null,
+            format: "PDF"
+        },
+        {
+            number: 5,
+            title: "ДИАМАТ Александрова 54 г",
+            authors: "Александров Г.Ф.",
+            hours: "40-50",
+            bookId: 17,
+            format: "PDF"
+        },
+        {
+            number: "5(alt)",
+            title: "Или ДИАМАТ М. Розенталь",
+            authors: "Розенталь М.М.",
+            hours: "30-40",
+            bookId: 22,
+            format: "PDF"
+        },
+        {
+            number: 6,
+            title: "Исторический материализм 54 г",
+            authors: "Константинов Ф.В.",
+            hours: "20-40",
+            bookId: 18,
+            format: "PDF"
+        },
+        {
+            number: "7а",
+            title: "Принципы коммунизма",
+            authors: "Энгельс",
+            hours: "в процессе",
+            bookId: null,
+            format: "PDF"
+        },
+        {
+            number: "7б",
+            title: "Марксизм и национальный вопрос",
+            authors: "Сталин",
+            hours: "в процессе", 
+            bookId: 51,
+            format: "PDF"
+        },
+        {
+            number: 8,
+            title: "Марксизм и вопросы языкознания",
+            authors: "Сталин",
+            hours: "в процессе",
+            bookId: null,
+            format: "PDF"
+        },
+        {
+            number: 9,
+            title: "Логика для ВУЗ 1949г",
+            authors: "Строгович М.С.",
+            hours: "в процессе",
+            bookId: 23,
+            format: "PDF"
+        },
+        {
+            number: 10,
+            title: "Анатомия и физиология человека. Учебник 8 кл средней школы: Кабанова 53 г",
+            authors: "Кабанова",
+            hours: "в процессе",
+            bookId: null,
+            format: "PDF"
+        }
+    ],
+    
+    selfStudy: [
+        {
+            number: 1,
+            title: "Вопросы ленинизма",
+            authors: "Сталин",
+            hours: "во 2-м году",
+            bookId: null,
+            format: "PDF"
+        },
+        {
+            number: 2,
+            title: "История медицины. 1954 г изд под ред Петрова",
+            authors: "Петров Б.Д.",
+            hours: "20-30",
+            bookId: 6,
+            format: "PDF"
+        },
+        {
+            number: 3,
+            title: "Дискуссия 23 г изд 1924г",
+            authors: "Попов К.А.",
+            hours: "во 2-м году",
+            bookId: 21,
+            format: "PDF"
+        },
+        {
+            number: 4,
+            title: "О недостатках партийной работы и мерах ликвидации троцкистских и иных двурушников. 1937 г.",
+            authors: "Сталин",
+            hours: "4-5",
+            bookId: null,
+            format: "PDF"
+        },
+        {
+            number: 5,
+            title: "Лекции по физиологии 1952г Павлов И.П.",
+            authors: "Павлов И.П.",
+            hours: 40,
+            bookId: null,
+            format: "PDF"
+        },
+        {
+            number: "5(alt)",
+            title: "или учебник физиологии 1955 г Быков К.М.",
+            authors: "Быков К.М.",
+            hours: 40,
+            bookId: 14,
+            format: "PDF"
+        },
+        {
+            number: 6,
+            title: "Государство и революция. Империализм, как высшая стадия капитализма",
+            authors: "Ленин",
+            hours: "во 2-м году",
+            bookIds: [null, null],
+            format: "PDF"
+        },
+        {
+            number: 7,
+            title: "Теория стадийного развития",
+            authors: "Лысенко Т.Д.",
+            hours: "8-12",
+            bookId: 42,
+            format: "PDF"
+        },
+        {
+            number: 8,
+            title: "Четвертая промышленная революция (Для проверки полученных знаний)",
+            authors: "Клаус Шваб",
+            hours: "12-14",
+            bookId: 52,
+            format: "PDF"
+        },
+        {
+            number: 9,
+            title: "Экономические проблемы социализма в СССР",
+            authors: "Сталин",
+            hours: "10-12",
+            bookId: null,
+            format: "PDF"
+        },
+        {
+            number: 10,
+            title: "Диалектика природы",
+            authors: "Энгельс",
+            hours: "во 2-м году",
+            bookId: null,
+            format: "PDF"
+        }
+    ]
+};
 
 // DOM элементы
 const booksGrid = document.getElementById('booksGrid');
 const searchInput = document.getElementById('search');
+const titleFilter = document.getElementById('titleFilter');
 const authorFilter = document.getElementById('authorFilter');
 const sortBy = document.getElementById('sortBy');
 const totalBooks = document.getElementById('totalBooks');
 const foundBooks = document.getElementById('foundBooks');
 const resetFiltersBtn = document.getElementById('resetFilters');
-const downloadNotification = document.getElementById('downloadNotification');
-const notificationText = document.getElementById('notificationText');
 
 // Инициализация
 document.addEventListener('DOMContentLoaded', () => {
     // Показываем общее количество книг
     totalBooks.textContent = books.length;
     
-    // Заполняем фильтр авторов
+    // Заполняем фильтры
     populateAuthorFilter();
+    populateTitleFilter();
     
     // Отображаем все книги
     displayBooks(books);
     
+    // Инициализируем учебную программу
+    initStudyProgram();
+    
+    // Инициализируем переключение вкладок
+    initTabs();
+    
     // Добавляем обработчики событий
     searchInput.addEventListener('input', filterAndSortBooks);
+    titleFilter.addEventListener('change', filterAndSortBooks);
     authorFilter.addEventListener('change', filterAndSortBooks);
     sortBy.addEventListener('change', filterAndSortBooks);
     resetFiltersBtn.addEventListener('click', resetFilters);
 });
 
+// Заполнение фильтра названиями
+function populateTitleFilter() {
+    // Получаем уникальные названия (исключаем пустые и дубликаты)
+    const titles = [...new Set(books
+        .map(book => book.title ? book.title.trim() : "")
+        .filter(title => title !== "")
+    )];
+    
+    // Сортируем по алфавиту
+    titles.sort((a, b) => a.localeCompare(b, 'ru'));
+    
+    // Добавляем в фильтр
+    titles.forEach(title => {
+        const option = document.createElement('option');
+        option.value = title;
+        
+        // Обрезаем слишком длинные названия
+        const displayTitle = title.length > 50 ? title.substring(0, 50) + '...' : title;
+        option.textContent = displayTitle;
+        titleFilter.appendChild(option);
+    });
+}
+
 // Заполнение фильтра авторами
 function populateAuthorFilter() {
-    // Получаем уникальных авторов
-    const authors = [...new Set(books.map(book => book.author))];
+    // Получаем уникальных авторов (исключаем пустые строки)
+    const authors = [...new Set(books
+        .map(book => book.author.trim())
+        .filter(author => author !== "" && author !== " ")
+    )];
     
     // Сортируем по алфавиту
     authors.sort((a, b) => a.localeCompare(b, 'ru'));
@@ -578,50 +802,81 @@ function populateAuthorFilter() {
         option.textContent = author;
         authorFilter.appendChild(option);
     });
+    
+    // Добавляем опцию "Автор не указан" если есть такие книги
+    const hasEmptyAuthors = books.some(book => !book.author || book.author.trim() === "");
+    if (hasEmptyAuthors) {
+        const emptyOption = document.createElement('option');
+        emptyOption.value = "not-specified";
+        emptyOption.textContent = "Автор не указан";
+        authorFilter.appendChild(emptyOption);
+    }
 }
 
-// Функция скачивания книги
-function downloadBook(book) {
-    // Показываем уведомление
-    notificationText.textContent = `Скачивание: ${book.title}`;
-    downloadNotification.classList.add('show');
+// Функция открытия книги в новой вкладке
+function openBook(book) {
+    if (book.downloadUrl && book.downloadUrl.trim() !== "") {
+        window.open(book.downloadUrl, '_blank');
+    }
+}
+
+// Создание карточки книги
+function createBookCard(book) {
+    const bookCard = document.createElement('div');
+    bookCard.className = 'book-card';
     
-    // Создаем скрытую ссылку для скачивания
-    const link = document.createElement('a');
-    link.href = book.downloadUrl;
-    link.download = `${book.title}.${book.format.toLowerCase()}`;
-    link.style.display = 'none';
-    document.body.appendChild(link);
+    // Проверяем, указан ли автор
+    const authorName = book.author && book.author.trim() !== "" ? book.author : "Автор не указан";
+    const authorClass = book.author && book.author.trim() !== "" ? "" : "author-not-specified";
     
-    // Кликаем по ссылке
-    link.click();
+    bookCard.innerHTML = `
+        <div class="book-header">
+            <h3 class="book-title">${book.title || "Без названия"}</h3>
+            <div class="book-author ${authorClass}">
+                <i class="fas fa-user"></i>
+                <span>${authorName}</span>
+            </div>
+        </div>
+        
+        <div class="book-meta">
+            <div class="book-year">
+                <i class="fas fa-calendar"></i>
+                <span>${book.year || "Год не указан"}</span>
+            </div>
+            <span class="book-format">${book.format || "Формат не указан"}</span>
+        </div>
+        
+        <div class="book-download">
+            <button class="btn-download" onclick="openBook(${JSON.stringify(book).replace(/"/g, '&quot;')})" ${!book.downloadUrl || book.downloadUrl.trim() === "" ? 'disabled' : ''}>
+                <i class="fas fa-download"></i> ${book.downloadUrl && book.downloadUrl.trim() !== "" ? 'Открыть' : 'Недоступно'}
+            </button>
+        </div>
+    `;
     
-    // Удаляем ссылку
-    setTimeout(() => {
-        document.body.removeChild(link);
-    }, 100);
-    
-    // Скрываем уведомление через 3 секунды
-    setTimeout(() => {
-        downloadNotification.classList.remove('show');
-    }, 3000);
+    return bookCard;
 }
 
 // Фильтрация и сортировка книг
 function filterAndSortBooks() {
     const searchTerm = searchInput.value.toLowerCase();
+    const selectedTitle = titleFilter.value;
     const selectedAuthor = authorFilter.value;
     const sortOption = sortBy.value;
     
     // Фильтрация
     let filteredBooks = books.filter(book => {
         const matchesSearch = searchTerm === '' || 
-                            book.title.toLowerCase().includes(searchTerm) || 
-                            book.author.toLowerCase().includes(searchTerm);
+                            (book.title && book.title.toLowerCase().includes(searchTerm)) || 
+                            (book.author && book.author.toLowerCase().includes(searchTerm));
         
-        const matchesAuthor = selectedAuthor === 'all' || book.author === selectedAuthor;
+        const matchesTitle = selectedTitle === 'all' || book.title === selectedTitle;
         
-        return matchesSearch && matchesAuthor;
+        // Обновляем проверку для опции "Автор не указан"
+        const matchesAuthor = selectedAuthor === 'all' || 
+                             (selectedAuthor === 'not-specified' && (!book.author || book.author.trim() === "")) ||
+                             book.author === selectedAuthor;
+        
+        return matchesSearch && matchesTitle && matchesAuthor;
     });
     
     // Сортировка
@@ -640,19 +895,19 @@ function sortBooks(booksArray, sortOption) {
     
     switch(sortOption) {
         case 'title-asc':
-            return sortedBooks.sort((a, b) => a.title.localeCompare(b.title, 'ru'));
+            return sortedBooks.sort((a, b) => (a.title || "").localeCompare(b.title || "", 'ru'));
         
         case 'title-desc':
-            return sortedBooks.sort((a, b) => b.title.localeCompare(a.title, 'ru'));
+            return sortedBooks.sort((a, b) => (b.title || "").localeCompare(a.title || "", 'ru'));
         
         case 'year-asc':
-            return sortedBooks.sort((a, b) => a.year - b.year);
+            return sortedBooks.sort((a, b) => (a.year || 0) - (b.year || 0));
         
         case 'year-desc':
-            return sortedBooks.sort((a, b) => b.year - a.year);
+            return sortedBooks.sort((a, b) => (b.year || 0) - (a.year || 0));
         
         case 'author-asc':
-            return sortedBooks.sort((a, b) => a.author.localeCompare(b.author, 'ru'));
+            return sortedBooks.sort((a, b) => (a.author || "").localeCompare(b.author || "", 'ru'));
         
         default:
             return sortedBooks;
@@ -675,33 +930,7 @@ function displayBooks(booksToDisplay) {
     }
     
     booksToDisplay.forEach(book => {
-        const bookCard = document.createElement('div');
-        bookCard.className = 'book-card';
-        
-        bookCard.innerHTML = `
-            <div class="book-header">
-                <h3 class="book-title">${book.title}</h3>
-                <div class="book-author">
-                    <i class="fas fa-user"></i>
-                    <span>${book.author}</span>
-                </div>
-            </div>
-            
-            <div class="book-meta">
-                <div class="book-year">
-                    <i class="fas fa-calendar"></i>
-                    <span>${book.year}</span>
-                </div>
-                <span class="book-format">${book.format}</span>
-            </div>
-            
-            <div class="book-download">
-                <button class="btn-download" onclick="downloadBook(${JSON.stringify(book).replace(/"/g, '&quot;')})">
-                    <i class="fas fa-download"></i> Скачать
-                </button>
-            </div>
-        `;
-        
+        const bookCard = createBookCard(book);
         booksGrid.appendChild(bookCard);
     });
 }
@@ -709,37 +938,101 @@ function displayBooks(booksToDisplay) {
 // Сброс фильтров
 function resetFilters() {
     searchInput.value = '';
+    titleFilter.value = 'all';
     authorFilter.value = 'all';
     sortBy.value = 'title-asc';
     filterAndSortBooks();
 }
 
-// Добавляем стили для "нет результатов"
-const noResultsStyle = document.createElement('style');
-noResultsStyle.textContent = `
-    .no-results {
-        grid-column: 1 / -1;
-        text-align: center;
-        padding: 50px 20px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+// Инициализация вкладок
+function initTabs() {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Убираем активный класс у всех кнопок и контента
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+            
+            // Добавляем активный класс текущей кнопке
+            btn.classList.add('active');
+            
+            // Показываем соответствующий контент
+            const tabId = btn.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+}
+
+// Инициализация учебной программы
+function initStudyProgram() {
+    // Основная программа
+    const mainProgramList = document.getElementById('mainProgram');
+    studyProgram.main.forEach(item => {
+        mainProgramList.appendChild(createProgramItem(item));
+    });
+    
+    // Самостоятельное изучение
+    const selfStudyList = document.getElementById('selfStudyProgram');
+    studyProgram.selfStudy.forEach(item => {
+        selfStudyList.appendChild(createProgramItem(item));
+    });
+}
+
+// Создание элемента программы
+function createProgramItem(item) {
+    const div = document.createElement('div');
+    div.className = 'program-item';
+    
+    // Проверяем, есть ли книга в библиотеке
+    let downloadButtons = '';
+    
+    if (item.bookId) {
+        const book = books.find(b => b.id === item.bookId);
+        if (book && book.downloadUrl && book.downloadUrl.trim() !== "") {
+            downloadButtons = `
+                <button class="program-download-btn" onclick="openBook(${JSON.stringify(book).replace(/"/g, '&quot;')})">
+                    <i class="fas fa-download"></i> Открыть
+                </button>
+            `;
+        }
+    } else if (item.bookIds) {
+        // Для нескольких книг
+        downloadButtons = item.bookIds.map(bookId => {
+            if (!bookId) return '';
+            const book = books.find(b => b.id === bookId);
+            if (book && book.downloadUrl && book.downloadUrl.trim() !== "") {
+                return `
+                    <button class="program-download-btn" onclick="openBook(${JSON.stringify(book).replace(/"/g, '&quot;')})">
+                        <i class="fas fa-download"></i> ${book.title.split(' ')[0] || 'Открыть'}
+                    </button>
+                `;
+            }
+            return '';
+        }).join('');
     }
     
-    .no-results i {
-        font-size: 3rem;
-        color: #ddd;
-        margin-bottom: 20px;
-    }
+    div.innerHTML = `
+        <div class="program-info">
+            <div>
+                <span class="program-number">${item.number}</span>
+                <span class="program-title">${item.title}</span>
+            </div>
+            <div class="program-authors">${item.authors}</div>
+            <div class="program-details">
+                <span class="program-detail">
+                    <i class="fas fa-clock"></i> ${item.hours} час.
+                </span>
+                <span class="program-detail">
+                    <i class="fas fa-file"></i> ${item.format}
+                </span>
+            </div>
+        </div>
+        <div class="program-actions">
+            ${downloadButtons || '<span class="no-book">Книга будет добавлена позже</span>'}
+        </div>
+    `;
     
-    .no-results p {
-        color: #666;
-        margin-bottom: 20px;
-        font-size: 1.1rem;
-    }
-    
-    .no-results .btn-reset {
-        margin: 0 auto;
-    }
-`;
-document.head.appendChild(noResultsStyle);
+    return div;
+}
