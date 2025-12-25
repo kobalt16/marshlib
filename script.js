@@ -392,13 +392,13 @@ const books = [
     },
     {
         id: 40,
-        title: "",
-        author: " ",
+        title: "Принципы коммунизма",
+        author: "Энгельс Фридрих",
         category: "history",
         year: 19,
         description: "Анализ революционных событий во Франции",
         format: "PDF",
-        downloadUrl: ""
+        downloadUrl: "https://drive.google.com/file/d/1nLPiRt4pkYKGt1rVrzDjfAvzs_NmyghJ/view?usp=sharing"
     },
     {
         id: 41,
@@ -529,7 +529,138 @@ const books = [
         description: "Анализ революционных событий во Франции",
         format: "PDF",
         downloadUrl: "https://drive.google.com/file/d/13IP4-YsNs0UlMwKdVHUjgZohVWtdO8bO/view?usp=sharing"
+    },
+    {
+        id: 54,
+        title: "Вопросы ленинизма",
+        author: "Сталин И.В.",
+        category: "history",
+        year: 1953,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1Zrc98egzl6VnFC0HH6XqZZnKmbGwTxIN/view?usp=sharing"
+    },
+    {
+        id: 55,
+        title: "История ВКП(б) краткий курс",
+        author: "Сталин И.В.",
+        category: "history",
+        year: 1953,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1-DC0s8wp2mHyjeDlC0d_kNKF7i5sBzVA/view?usp=sharing"
+    },
+    {
+        id: 56,
+        title: "Диалектика природы",
+        author: "Энгельс Фридрих",
+        category: "history",
+        year: 1941,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1nqdSUwdNQqhRBMkPnu81kCNwrzYjN8_s/view?usp=sharing"
+    },
+    {
+        id: 57,
+        title: "О диалектическом и историческом материализме",
+        author: "Сталин И.В.",
+        category: "history",
+        year: 1945,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1VvtjEf1ZcW1qMU7LOB-UVl9V-G3G0qS2/view?usp=sharing"
+    },
+    {
+        id: 58,
+        title: "Государство и революция",
+        author: "Ленин В.И.",
+        category: "history",
+        year: 1953,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1TUk1GdNFx70d_p0tgGx7Mt2RrQ1ywPaB/view?usp=sharing"
+    },
+    {
+        id: 59,
+        title: "Империализм как высшая стадия капитализма",
+        author: "Ленин В.И.",
+        category: "history",
+        year: 19,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1l13yLQ8stFukrlugJ3a6xECdm1ENEhCJ/view?usp=sharing"
+    },
+    {
+        id: 60,
+        title: "Марксизм и вопросы языкознания",
+        author: "Сталин И.В.",
+        category: "history",
+        year: 1950,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/13Pr-mRi-EaZmOVwISOojIwBX7naXavW5/view?usp=sharing"
+    },
+    {
+        id: 61,
+        title: "Физиологические основы обучения и воспитания",
+        author: "Мурский Л.И.",
+        category: "history",
+        year: 1972,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1KLH-nzSKjbtYOGuHT4lwnqhNEYxAoVFb/view?usp=sharing"
+    },
+    {
+        id: 62,
+        title: "Учебник анатомии и физиологии человека",
+        author: "Кабанов А.Н.",
+        category: "history",
+        year: 1954,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/10uQZVoxWWHJ5J4bMmlSkUyYgKM-Px-Mb/view?usp=sharing"
+    },
+    {
+        id: 63,
+        title: "Тито - глава предателей",
+        author: "Рено де Жувенель",
+        category: "history",
+        year: 1951,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1RanN_4iZdNnR0aYygbl8kUgfIfh6ZL8l/view?usp=sharing"
+    },
+    {
+        id: 64,
+        title: "Лекции по физиологии",
+        author: "Павлов И.П.",
+        category: "history",
+        year: 1952,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1GUF_K9hSDyG-dIx-dfbgWFUIop_7P7Um/view?usp=sharing"
+    },
+    {
+        id: 65,
+        title: "Экономические проблемы социализма в СССР",
+        author: "Сталин И.В.",
+        category: "history",
+        year: 1952,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/1t5Vyx1wq8l4EfJ4CIbyXzES2z3Z8uAKW/view?usp=sharing"
+    },
+    {
+        id: 66,
+        title: "О недостатках партийной работы и мерах ликвидации троцкистских и иных двурушников",
+        author: "Сталин И.В.",
+        category: "history",
+        year: 1937,
+        description: "Анализ революционных событий во Франции",
+        format: "PDF",
+        downloadUrl: "https://drive.google.com/file/d/14LfV8_jQuZjT7XCb0Ezpi1kuGS1NKdd1/view?usp=sharing"
     }
+
 ];
 
 // Учебная программа
@@ -564,11 +695,11 @@ const studyProgram = {
             title: "Краткий курс истории ВКП(б)",
             authors: "Комиссия ЦК ВКП(б)",
             hours: 30,
-            bookId: null,
+            bookId: 55,
             format: "PDF"
         },
         {
-            number: 5,
+            number: "5а",
             title: "ДИАМАТ Александрова 54 г",
             authors: "Александров Г.Ф.",
             hours: "40-50",
@@ -576,7 +707,7 @@ const studyProgram = {
             format: "PDF"
         },
         {
-            number: "5(alt)",
+            number: "5б",
             title: "Или ДИАМАТ М. Розенталь",
             authors: "Розенталь М.М.",
             hours: "30-40",
@@ -592,15 +723,15 @@ const studyProgram = {
             format: "PDF"
         },
         {
-            number: "7а",
+            number: 7,
             title: "Принципы коммунизма",
             authors: "Энгельс",
             hours: "в процессе",
-            bookId: null,
+            bookId: 40,
             format: "PDF"
         },
         {
-            number: "7б",
+            number: 8,
             title: "Марксизм и национальный вопрос",
             authors: "Сталин",
             hours: "в процессе", 
@@ -608,15 +739,15 @@ const studyProgram = {
             format: "PDF"
         },
         {
-            number: 8,
+            number: 9,
             title: "Марксизм и вопросы языкознания",
             authors: "Сталин",
             hours: "в процессе",
-            bookId: null,
+            bookId: 60,
             format: "PDF"
         },
         {
-            number: 9,
+            number: 10,
             title: "Логика для ВУЗ 1949г",
             authors: "Строгович М.С.",
             hours: "в процессе",
@@ -624,11 +755,11 @@ const studyProgram = {
             format: "PDF"
         },
         {
-            number: 10,
+            number: 11,
             title: "Анатомия и физиология человека. Учебник 8 кл средней школы: Кабанова 53 г",
             authors: "Кабанова",
             hours: "в процессе",
-            bookId: null,
+            bookId: 62,
             format: "PDF"
         }
     ],
@@ -639,7 +770,7 @@ const studyProgram = {
             title: "Вопросы ленинизма",
             authors: "Сталин",
             hours: "во 2-м году",
-            bookId: null,
+            bookId: 54,
             format: "PDF"
         },
         {
@@ -663,19 +794,19 @@ const studyProgram = {
             title: "О недостатках партийной работы и мерах ликвидации троцкистских и иных двурушников. 1937 г.",
             authors: "Сталин",
             hours: "4-5",
-            bookId: null,
+            bookId: 66,
             format: "PDF"
         },
         {
-            number: 5,
+            number: "5а",
             title: "Лекции по физиологии 1952г Павлов И.П.",
             authors: "Павлов И.П.",
             hours: 40,
-            bookId: null,
+            bookId: 64,
             format: "PDF"
         },
         {
-            number: "5(alt)",
+            number: "5б",
             title: "или учебник физиологии 1955 г Быков К.М.",
             authors: "Быков К.М.",
             hours: 40,
@@ -687,7 +818,7 @@ const studyProgram = {
             title: "Государство и революция. Империализм, как высшая стадия капитализма",
             authors: "Ленин",
             hours: "во 2-м году",
-            bookIds: [null, null],
+            bookIds: [58, 59],
             format: "PDF"
         },
         {
@@ -711,7 +842,7 @@ const studyProgram = {
             title: "Экономические проблемы социализма в СССР",
             authors: "Сталин",
             hours: "10-12",
-            bookId: null,
+            bookId: 65,
             format: "PDF"
         },
         {
@@ -719,7 +850,7 @@ const studyProgram = {
             title: "Диалектика природы",
             authors: "Энгельс",
             hours: "во 2-м году",
-            bookId: null,
+            bookId: 56,
             format: "PDF"
         }
     ]
