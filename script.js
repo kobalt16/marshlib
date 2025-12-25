@@ -418,7 +418,7 @@ const books = [
         year: 1952,
         description: "Анализ революционных событий во Франции",
         format: "PDF",
-        downloadUrl: "https://drive.google.com/file/d/1fk8NkX1d-IsORZ4iC7oWhboaDW7rfynV/view?usp=sharing"
+        downloadUrl: "https://drive.google.com/file/d/1O7PQ8qsObRL77iwtESVxWsUS4hObcVSn/view?usp=sharing"
     },
     {
         id: 43,
